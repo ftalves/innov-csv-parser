@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+}
+
+#current-description {
+  background: #f4f4f4;
+}
+
+#parsed-results {
+  height: 300px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.collapser {
+  display: inline;
+  margin-right: 8px;
+  padding: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  background: #f1f1f1;
+}
+
+.prop {
+  font-weight: bold;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSV Parser</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h4>Select CSV to start...</h4>
+  <input id='csv' type='file' />
+  <hr />
+  <h5>Current Product: <b><span id='current-name'>Product example</span></b></h5>
+  <h5>Product Description:</h5>
+  <div id='current-description' class='p-3'></div>
+  <p>
+    <i>
+      Select the product name on the description to continue...
+    </i>
+  </p>
+  <button id='continue'>Continue</button>
+
+  <br /><hr />
+
+  <h4>Parsed Results:</h4>
+  <div id='parsed-results'></div>
+  <br />
+  <button id='json-string'>Get JSON string</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.js"></script>
+<script src="index.js"></script>
+</html>
